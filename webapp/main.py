@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import AzureSearch
 
-
+#add test
 app = FastAPI()
 
 openai.api_base = os.getenv("OPENAI_API_BASE")  # Your Azure OpenAI resource's endpoint value.
