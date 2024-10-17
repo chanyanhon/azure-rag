@@ -71,7 +71,7 @@ def assistant(query, context):
     ]
 
     response = openai.ChatCompletion.create(
-        engine="demo-alfredo",
+        engine="gpt-35-turbo-16k",
         messages=messages,
     )
     return response['choices'][0]['message']['content']

@@ -69,5 +69,5 @@ jobs:
                 SEARCH_SERVICE_NAME="https://ai-search-poc-20241016.search.windows.net" \
                 SEARCH_API_KEY=${{ secrets.SEARCH_SERVICE_API_KEY }} \
                 SEARCH_INDEX_NAME="hotels-sample-index"
-            az containerapp update -n demo-container -g demo-container --cpu 2 --memory 4Gi
+            az containerapp update -n demo-container -g poc-ust-20241016 --cpu 2 --memory 4Gi
             az containerapp update -n ${{ env.AZURE_CONTAINER_APP_NAME }} -g ${{ env.AZURE_GROUP_NAME }} --image ghcr.io/${{ env.REPO }}:${{ github.sha }}
